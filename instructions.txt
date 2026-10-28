@@ -1,0 +1,43 @@
+Rd -> Destination register -> 0–7
+Rs -> Source register -> 0–7
+R -> Register operand ->0–7
+imm8 -> 8-bit immediate value -> 0–255
+addr -> 8-bit memory address or jump target -> 0–255
+
+DATA
+────
+LDI  Rd, imm8
+MOV  Rd, Rs
+LD   Rd, addr
+ST   Rs, addr
+
+ARITHMETIC
+──────────
+ADD  Rd, Rs
+SUB  Rd, Rs
+CMP  Rd, Rs
+
+LOGIC
+─────
+AND  Rd, Rs
+OR   Rd, Rs
+XOR  Rd, Rs
+NOT  Rd
+
+SHIFT
+─────
+SHL  Rd, imm3
+SHR  Rd, imm3
+
+BRANCH
+──────
+JMP  addr
+JZ   addr
+JNZ  addr
+JC   addr
+JN   addr
+
+CONTROL
+───────
+NOP
+HALT
