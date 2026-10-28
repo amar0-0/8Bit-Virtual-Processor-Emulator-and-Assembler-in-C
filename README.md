@@ -22,13 +22,11 @@ The project consists of two independent C programs: an assembler that converts h
 ```text
 project/
 ├── assembler.c
-├── assembler.exe
 ├── instructions.txt
 ├── opcodeTable.txt
 ├── program.bin
 ├── program.txt
 ├── virProEmu1.c
-├── virProEmu1.exe
 └── virProVEmu1-NoComments.c
 ```
 
@@ -39,7 +37,6 @@ project/
 - `opcodeTable.txt` — opcode reference.
 - `program.txt` — assembly program input for the assembler.
 - `program.bin` — generated machine-code binary consumed by the CPU emulator.
-- `.exe` files — compiled Windows executables, which can be generated again from the source files.
 
 ## Architecture
 
